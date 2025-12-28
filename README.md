@@ -16,6 +16,7 @@ This custom integration lets you surface Robinhood Crypto Trading API data insid
    - `Private key (base64)`: base64-encoded Ed25519 private key seed generated per the docs.
    - `Symbols`: comma-separated trading pairs to monitor (e.g. `BTC-USD,ETH-USD`). Leave blank to fetch all.
 4. Adjust polling intervals and symbols later in the integration’s **Options**.
+5. To create/regenerate your API key and pair it with your public key, visit the [Crypto Account Settings](https://robinhood.com/account/crypto) page in a desktop browser. Enter your base64 public key when creating credentials, then copy the API key into the integration setup screen above.
 
 ### HACS installation
 After this repo is published, you can add it as a custom repository in HACS:

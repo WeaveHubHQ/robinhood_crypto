@@ -1,0 +1,45 @@
+place_order:
+  name: Place crypto order
+  description: Submit a crypto order through the Robinhood Crypto Trading API.
+  fields:
+    entry_id:
+      description: Optional config entry id to use when multiple accounts are configured.
+      example: "abc123def456"
+    symbol:
+      description: Trading pair symbol (e.g. BTC-USD).
+      example: "BTC-USD"
+    side:
+      description: buy or sell.
+      example: "buy"
+    order_type:
+      description: market, limit, stop_limit, or stop_loss.
+      example: "market"
+    client_order_id:
+      description: Optional client order id for idempotency (uuid recommended). Generated if omitted.
+      example: "5d2e0678-12e0-4c9d-9cf7-1fd8d2cb62ac"
+    asset_quantity:
+      description: Base asset quantity to trade (string or number).
+      example: "0.01"
+    quote_amount:
+      description: Quote currency amount to trade for limit/stop orders.
+      example: "25"
+    limit_price:
+      description: Limit price for limit or stop limit orders.
+      example: "41000"
+    stop_price:
+      description: Stop price for stop or stop limit orders.
+      example: "40500"
+    time_in_force:
+      description: Time in force for stop orders (gtc, gfd, gfw, gfm). Defaults to gtc.
+      example: "gtc"
+
+cancel_order:
+  name: Cancel crypto order
+  description: Cancel a crypto order by order id.
+  fields:
+    entry_id:
+      description: Optional config entry id to use when multiple accounts are configured.
+      example: "abc123def456"
+    order_id:
+      description: Robinhood order id to cancel.
+      example: "61c2188d-3e05-4212-8e11-46970dfa0e49"

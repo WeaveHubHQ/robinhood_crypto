@@ -1,0 +1,12 @@
+{
+  "domain": "robinhood_crypto",
+  "name": "Robinhood Crypto",
+  "version": "0.1.0",
+  "documentation": "https://docs.robinhood.com/crypto/trading/",
+  "requirements": [],
+  "codeowners": [
+    "@j-lazerus"
+  ],
+  "config_flow": true,
+  "iot_class": "cloud_polling"
+}

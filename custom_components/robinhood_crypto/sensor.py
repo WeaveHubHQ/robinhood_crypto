@@ -186,6 +186,7 @@ class MarketPriceSensor(RobinhoodEntity):
 
     _attr_icon = "mdi:chart-line"
     _attr_device_class = SensorDeviceClass.MONETARY
+    _attr_suggested_display_precision = 8
 
     def __init__(self, entry_id: str, coordinator, symbol: str) -> None:
         super().__init__(entry_id, coordinator)
@@ -234,6 +235,7 @@ class MarketValueSensor(MultiCoordinatorEntity):
 
     _attr_icon = "mdi:cash-multiple"
     _attr_device_class = SensorDeviceClass.MONETARY
+    _attr_suggested_display_precision = 8
     _attr_has_entity_name = True
 
     def __init__(

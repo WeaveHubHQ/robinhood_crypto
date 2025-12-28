@@ -22,6 +22,9 @@ After this repo is published, you can add it as a custom repository in HACS:
 1. HACS → Integrations → ⋮ → Custom repositories → add this repo URL as category “Integration”.
 2. Install “Robinhood Crypto”, restart Home Assistant, then add the integration via **Settings → Devices & Services**.
 
+### Example (SHIB price and value)
+![SHIB example](assets/shib_example.png)
+
 ### Key generation (OpenSSL)
 If you prefer OpenSSL instead of Python, you can generate the Ed25519 keypair and base64 strings like this:
 

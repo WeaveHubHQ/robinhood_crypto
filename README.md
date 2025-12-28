@@ -17,6 +17,11 @@ This custom integration lets you surface Robinhood Crypto Trading API data insid
    - `Symbols`: comma-separated trading pairs to monitor (e.g. `BTC-USD,ETH-USD`). Leave blank to fetch all.
 4. Adjust polling intervals and symbols later in the integration’s **Options**.
 
+### HACS installation
+After this repo is published, you can add it as a custom repository in HACS:
+1. HACS → Integrations → ⋮ → Custom repositories → add this repo URL as category “Integration”.
+2. Install “Robinhood Crypto”, restart Home Assistant, then add the integration via **Settings → Devices & Services**.
+
 ### Key generation (OpenSSL)
 If you prefer OpenSSL instead of Python, you can generate the Ed25519 keypair and base64 strings like this:
 

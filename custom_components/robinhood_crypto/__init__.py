@@ -32,6 +32,8 @@ from .coordinator import RobinhoodRuntimeData, create_coordinators
 
 _LOGGER = logging.getLogger(__name__)
 
+CONFIG_SCHEMA = cv.config_entry_only_config_schema(DOMAIN)
+
 
 async def async_setup(hass: HomeAssistant, config: dict) -> bool:
     """Set up the integration via YAML (not supported)."""

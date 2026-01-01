@@ -5,8 +5,10 @@
     "@InfoSecured"
   ],
   "config_flow": true,
-  "documentation": "https://docs.robinhood.com/crypto/trading/",  
+  "documentation": "https://docs.robinhood.com/crypto/trading/",
   "iot_class": "cloud_polling",
-  "requirements": [],
+  "requirements": [
+    "cryptography>=41.0.0"
+  ],
   "version": "0.1.0"
 }

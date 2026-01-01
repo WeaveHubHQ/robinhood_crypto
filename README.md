@@ -55,3 +55,7 @@ openssl pkey -in ed25519-key.pem -pubout -outform DER | tail -c 32 | base64
 ## Development
 - Requirements are specified in `custom_components/robinhood_crypto/manifest.json` (PyNaCl for signing).
 - Services are documented in `custom_components/robinhood_crypto/services.yaml`.
+
+## Contributions
+
+Come see our other apps and integrations at [WeaveHub](https://weavehub.app).

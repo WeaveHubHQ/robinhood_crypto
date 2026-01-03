@@ -2,11 +2,14 @@
   "domain": "robinhood_crypto",
   "name": "Robinhood Crypto",
   "codeowners": [
-    "@InfoSecured"
+    "@WeaveHubHQ"
   ],
   "config_flow": true,
-  "documentation": "https://docs.robinhood.com/crypto/trading/",
+  "dependencies": [],
+  "documentation": "https://github.com/WeaveHubHQ/",
+  "integration_type": "service",
   "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/WeaveHubHQ/issues",
   "requirements": [
     "cryptography>=41.0.0"
   ],

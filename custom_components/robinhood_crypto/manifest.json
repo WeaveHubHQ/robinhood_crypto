@@ -2,7 +2,7 @@
   "domain": "robinhood_crypto",
   "name": "Robinhood Crypto",
   "codeowners": [
-    "@InfoSecured"
+    "@WeaveHubHQ"
   ],
   "config_flow": true,
   "documentation": "https://docs.robinhood.com/crypto/trading/",
@@ -10,5 +10,5 @@
   "requirements": [
     "cryptography>=41.0.0"
   ],
-  "version": "0.1.0"
+  "version": "0.1.1"
 }

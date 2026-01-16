@@ -9,6 +9,13 @@ This custom integration lets you surface Robinhood Crypto Trading API data insid
 - Admin services to place or cancel orders
 
 ## Setup
+
+### HACS (Recommended)
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=WeaveHubHQ&repository=robinhood_crypto)
+
+### Manual installation
+
 1. In Home Assistant, copy the `custom_components/robinhood_crypto` folder into your `config/custom_components/` directory and restart.
 2. Add the integration via **Settings → Devices & Services → Add Integration → Robinhood Crypto**.
 3. Provide:
@@ -18,7 +25,16 @@ This custom integration lets you surface Robinhood Crypto Trading API data insid
 4. Adjust polling intervals and symbols later in the integration’s **Options**.
 5. To create/regenerate your API key and pair it with your public key, visit the [Crypto Account Settings](https://robinhood.com/account/crypto) page in a desktop browser. Enter your base64 public key when creating credentials, then copy the API key into the integration setup screen above.
 
-### HACS installation
+### Configuration
+
+1. Open HACS in Home Assistant
+2. Click on "Integrations"
+3. Click the three dots in the top right corner
+4. Select "Custom repositories"
+5. Add this repository URL and select "Integration" as the category
+6. Click "Install"
+7. Restart Home Assistant
+   
 After this repo is published, you can add it as a custom repository in HACS:
 1. HACS → Integrations → ⋮ → Custom repositories → add this repo URL as category “Integration”.
 2. Install “Robinhood Crypto”, restart Home Assistant, then add the integration via **Settings → Devices & Services**.
